@@ -1,0 +1,111 @@
+/* Reset body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Main container */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;  /* ensures full height */
+  width: 100vw;       /* ensures full width */
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden; /* removes scrollbars */
+}
+
+/* Glassmorphism Form */
+.form-box {
+  width: 450px; /* slightly bigger for desktop */
+  max-width: 90%; /* responsive for smaller screens */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  padding: 40px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.form-content h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Labels */
+.form-content label {
+  display: block;
+  margin: 12px 0 6px;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.form-content select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Register Button Floating Animation */
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Arrow inside button */
+.register-btn .arrow {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* On hover/focus, float button */
+.register-btn:hover,
+.register-btn:focus {
+  animation: floatButton 1s ease-in-out infinite;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background: #218838;
+}
+
+/* Move the arrow slightly to the right */
+.register-btn:hover .arrow,
+.register-btn:focus .arrow {
+  transform: translateX(6px);
+}
+
+/* Keyframes for floating effect */
+@keyframes floatButton {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
