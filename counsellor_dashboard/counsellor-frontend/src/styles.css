@@ -1,0 +1,115 @@
+/* Patients Page Styles */
+.patientsPage h2 {
+	color: #2b7a3b;
+	margin-bottom: 18px;
+}
+.patientsPage form {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 18px;
+}
+.patientsPage input {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.patientsPage button {
+	padding: 8px 12px;
+	border: none;
+	background: #2b7a3b;
+	color: #fff;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.patientsPage table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+	margin-top: 10px;
+}
+.patientsPage th, .patientsPage td {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+}
+.patientsPage th {
+	background: #f4f6f8;
+}
+
+/* Volunteers Page Styles */
+.volunteersPage h2 {
+	color: #1b2b3a;
+	margin-bottom: 18px;
+}
+.volunteersPage form {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 18px;
+}
+.volunteersPage input {
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+.volunteersPage button {
+	padding: 8px 12px;
+	border: none;
+	background: #1b2b3a;
+	color: #fff;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.volunteersPage table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+	margin-top: 10px;
+}
+.volunteersPage th, .volunteersPage td {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+}
+.volunteersPage th {
+	background: #f4f6f8;
+}
+
+/* Reports Page Styles */
+.reportsPage h2 {
+	color: #2b7a3b;
+	margin-bottom: 18px;
+}
+.reportsPage h3 {
+	color: #1b2b3a;
+	margin-top: 18px;
+}
+.reportsPage ul {
+	list-style: disc inside;
+	margin-bottom: 12px;
+	padding-left: 0;
+}
+.reportsPage li {
+	background: #fff;
+	margin-bottom: 6px;
+	padding: 8px 12px;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+*{box-sizing:border-box;font-family:Arial, sans-serif}
+.appRoot{display:flex;min-height:100vh}
+.sidebar{width:260px;background:#1b2b3a;color:#fff;padding:20px}
+.sidebar h2{margin:0 0 20px 0;font-size:20px}
+.sidebar nav button{display:block;width:100%;padding:10px;margin:6px 0;border:none;background:transparent;color:#fff;text-align:left;cursor:pointer}
+.sidebar nav button.active{background:#14202a;border-radius:6px}
+.main{flex:1;padding:26px;background:#f4f6f8}
+.formRow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.formRow input, .formRow select{padding:8px;border:1px solid #ccc;border-radius:6px}
+.formRow button{padding:8px 12px;border:none;background:#2b7a3b;color:#fff;border-radius:6px}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.cardHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.reportArea{margin-top:12px}
